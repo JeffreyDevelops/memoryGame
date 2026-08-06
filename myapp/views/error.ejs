@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+    <!-- AUTHOR STYLESHEET -->
+    <base href="/">
+    <link rel="stylesheet" href="stylesheets/fonts.css">
+    <link rel="stylesheet" href="stylesheets/error/error.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <main id="error">
+        <span class="header_text">memory</span>
+        <span class="error_status"><%= status %></span>
+        <span class="error_message"><%= message %></span>
+        <a class="btn" href="/">Back to Menu</a>
+        <% if (error.stack) { %>
+        <pre class="error_stack"><%= error.stack %></pre>
+        <% } %>
+    </main>
+</body>
+</html>
