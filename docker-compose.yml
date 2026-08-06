@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: ./myapp
+    image: memory-game
+    container_name: memory-game-app
+    restart: unless-stopped
+    environment:
+      PORT: 2002
+    ports:
+      - "127.0.0.1:${APP_PORT:-2002}:2002"
+    networks:
+      - memory-game-net
+
+networks:
+  memory-game-net:

@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.DS_Store
+.claude
+.idea
+.vscode
+Dockerfile
+.dockerignore
+docker-compose.yml
+README.md
+README-template.md
+preview.jpg
+*.sketch
+*.fig
+*.xd
